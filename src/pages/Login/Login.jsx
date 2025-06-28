@@ -14,7 +14,6 @@ const [signState , setSignState] = useState("Sign In")
       <h1>{signState}</h1>
       <form action="">
         {signState === "Sign Up" ? <input type='text' placeholder='Your name'/>:<></>}
-        <input type="text" placeholder='Last name' />
         <input type="email" placeholder='Email' />
         <input type="password" placeholder='Password' />
         <button>{signState}</button>
@@ -29,7 +28,7 @@ const [signState , setSignState] = useState("Sign In")
       <div className="form-switch">
         {signState === "Sign In" ?
         <p>New to Netflix? <span onClick={(()=>setSignState("Sign Up"))}>Sign Up Now</span></p>
-       :<p>Already have account? <span>Sign Up Now</span></p>}
+       :<p>Already have account? <span  onClick={(()=>setSignState("Sign In"))}>Sign Up Now</span></p>}
         
       </div>
     </div>
