@@ -22,3 +22,15 @@
     margin-bottom: 30px;
     list-style: none;
 } 
+
+@media (max-width:800px){
+    .footer-icons{
+        width: 25px;
+
+    }
+    .footer-icons ul{
+        grid-template-columns: auto auto;
+        gap: 8px;
+        font-size:14px ;
+    }
+}
